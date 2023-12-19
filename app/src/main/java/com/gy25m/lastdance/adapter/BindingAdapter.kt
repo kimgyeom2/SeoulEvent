@@ -6,10 +6,12 @@ import com.gy25m.lastdance.model.User
 
 object BindingAdapter
 {
-//    @BindingAdapter("ItemList")
-//    @JvmStatic
-//    fun test(view: RecyclerView, items: List<User?>) {
-//        val adapter: RecyclerAdapter = view.adapter as RecyclerAdapter
-//        adapter.submitList(items)
-//    }
+    @BindingAdapter("ItemList")
+    @JvmStatic
+    fun setRecyclerViewProperties(recyclerView: RecyclerView, data: List<User>?) {
+        recyclerView.adapter=RecyclerAdapter()
+        if (recyclerView.adapter is RecyclerAdapter) {
+            (recyclerView.adapter as RecyclerAdapter).submitList(data ?: emptyList())
+        }
+    }
 }

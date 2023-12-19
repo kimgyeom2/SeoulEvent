@@ -1,5 +1,6 @@
-package com.gy25m.lastdance.viewmodel
+package com.gy25m.lastdance.ui.main
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.gy25m.lastdance.model.User
@@ -10,27 +11,24 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 import javax.inject.Inject
 
 @HiltViewModel
-class LoginViewModel @Inject constructor(private val loginUsecase: LoginUsecase): ViewModel() {
+class MainViewModel @Inject constructor(private val loginUsecase: LoginUsecase) : ViewModel() {
 
     var content: MutableLiveData<List<User>> = MutableLiveData(listOf())
 
 
-    fun btnClick(){
-        var cc= loginUsecase.useCaseGetApi()
+    fun btnClick() {
+        var cc = loginUsecase.useCaseGetApi()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                content.value=it
-            },{})
+                content.value = it
+            }, {})
 
     }
 
-    fun saveData(){
+    fun saveData() {
         loginUsecase.saveData()
     }
-
-
-
 
 
 }

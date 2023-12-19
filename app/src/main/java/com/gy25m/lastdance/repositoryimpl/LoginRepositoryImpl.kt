@@ -1,8 +1,8 @@
 package com.gy25m.lastdance.repositoryimpl
 
-import com.gy25m.lastdance.Entitiy.LoginEntity
 import com.gy25m.lastdance.apiservice.ApiService
 import com.gy25m.lastdance.database.DBManager
+import com.gy25m.lastdance.entity.LoginEntity
 import com.gy25m.lastdance.model.User
 import com.gy25m.lastdance.repository.LoginRepository
 import io.reactivex.rxjava3.core.Single

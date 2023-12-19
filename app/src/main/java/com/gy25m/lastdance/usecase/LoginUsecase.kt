@@ -1,12 +1,10 @@
 package com.gy25m.lastdance.usecase
 
-import com.gy25m.lastdance.Entitiy.LoginEntity
+import com.gy25m.lastdance.entity.LoginEntity
 import com.gy25m.lastdance.repository.LoginRepository
 import javax.inject.Inject
 
 class LoginUsecase @Inject constructor(private  val loginRepository: LoginRepository) {
-
-
     fun useCaseGetApi()=loginRepository.getData()
 
     var aa :MutableList<LoginEntity> = mutableListOf()

@@ -27,9 +27,6 @@ class RecyclerAdapter: ListAdapter<User, RecyclerAdapter.VH>(MyModelDiffCallback
 
     override fun onBindViewHolder(holder: VH, position: Int) {
         holder.bind(getItem(position))
-        holder.binding.layout.setOnClickListener {
-            Log.i("zz","clicked $position")
-        }
     }
 
     class MyModelDiffCallback : DiffUtil.ItemCallback<User>() {

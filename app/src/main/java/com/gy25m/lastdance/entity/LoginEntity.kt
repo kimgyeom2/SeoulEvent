@@ -1,4 +1,4 @@
-package com.gy25m.lastdance.Entitiy
+package com.gy25m.lastdance.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
