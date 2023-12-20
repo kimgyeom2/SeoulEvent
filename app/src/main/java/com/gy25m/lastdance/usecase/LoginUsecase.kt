@@ -1,5 +1,6 @@
 package com.gy25m.lastdance.usecase
 
+import android.util.Log
 import com.gy25m.lastdance.entity.LoginEntity
 import com.gy25m.lastdance.repository.LoginRepository
 import javax.inject.Inject
@@ -15,6 +16,7 @@ class LoginUsecase @Inject constructor(private  val loginRepository: LoginReposi
                     aa.add(LoginEntity(0,userId = it.userId.toString(), id = it.id.toString(), title = it.title, body = it.body))
                 }
                 aa.forEach {
+                    Log.i("gyeom",it.userId)
                     loginRepository.saveData(it)
                 }
 

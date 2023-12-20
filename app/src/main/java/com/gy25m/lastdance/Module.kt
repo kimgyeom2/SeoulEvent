@@ -23,8 +23,7 @@ object MyModule {
 
     @Provides
     @Singleton
-    fun provideMyInterface(retrofit: ApiService,
-                           appDatabase: DBManager): LoginRepository = LoginRepositoryImpl(retrofit,appDatabase)
+    fun provideMyInterface(retrofit: ApiService,appDatabase: DBManager): LoginRepository = LoginRepositoryImpl(retrofit,appDatabase)
 
 
     @Provides
@@ -45,7 +44,6 @@ object MyModule {
             context,
             DBManager::class.java, "database"
         )
-            .fallbackToDestructiveMigration()
             .build()
     }
 

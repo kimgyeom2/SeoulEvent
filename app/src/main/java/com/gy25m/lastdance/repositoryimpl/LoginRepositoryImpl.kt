@@ -1,5 +1,6 @@
 package com.gy25m.lastdance.repositoryimpl
 
+import android.util.Log
 import com.gy25m.lastdance.apiservice.ApiService
 import com.gy25m.lastdance.database.DBManager
 import com.gy25m.lastdance.entity.LoginEntity
@@ -16,6 +17,7 @@ class LoginRepositoryImpl @Inject constructor(
     override fun getData(): Single<List<User>> = apiService.getJson()
 
     override fun saveData(user: LoginEntity) {
+        Log.i("gyeom",user.title)
         database.userDao().insert(user)
     }
 
