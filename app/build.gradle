@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.gy25m.lastdance'
+    namespace 'com.gy25m.seoulevent'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.gy25m.lastdance"
+        applicationId "com.gy25m.seoulevent"
         minSdk 26
         targetSdk 33
         versionCode 1
