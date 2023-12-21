@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.gy25m.seoulevent.R
+import com.gy25m.seoulevent.ui.login.LoginActivity
 import com.gy25m.seoulevent.ui.main.MainActivity
 
 
@@ -14,7 +15,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         findViewById<TextView>(R.id.tv).setOnClickListener {
-            var aa=Intent(this,MainActivity::class.java)
+            var aa=Intent(this,LoginActivity::class.java)
             startActivity(aa)
         }
     }

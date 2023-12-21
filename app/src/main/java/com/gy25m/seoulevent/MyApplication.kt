@@ -8,6 +8,6 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-
+      //  KakaoSdk.init(this, "{NATIVE_APP_KEY}")
     }
 }
