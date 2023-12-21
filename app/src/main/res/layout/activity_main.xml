@@ -6,7 +6,7 @@
     <data>
         <variable
             name="vm"
-            type="com.gy25m.lastdance.ui.main.MainViewModel" />
+            type="com.gy25m.seoulevent.ui.main.MainViewModel" />
     </data>
 
     <LinearLayout
