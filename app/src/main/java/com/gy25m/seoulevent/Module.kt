@@ -21,9 +21,9 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object MyModule {
 
-    @Provides
-    @Singleton
-    fun provideMyInterface(retrofit: ApiService,appDatabase: DBManager): LoginRepository = LoginRepositoryImpl(retrofit,appDatabase)
+//    @Provides
+//    @Singleton
+//    fun provideMyInterface(retrofit: ApiService,appDatabase: DBManager): LoginRepository = LoginRepositoryImpl(retrofit,appDatabase)
 
 
     @Provides

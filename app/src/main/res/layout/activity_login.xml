@@ -3,6 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+   <data>
+
+      <variable
+          name="activity"
+          type="com.gy25m.seoulevent.ui.login.LoginActivity"/>
+
+      <variable
+          name="viewModel"
+          type="com.gy25m.seoulevent.ui.login.LoginViewModel" />
+
+   </data>
+
+
    <androidx.constraintlayout.widget.ConstraintLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent">
@@ -22,6 +35,7 @@
              android:layout_height="40dp"
              android:layout_marginLeft="16dp"
              android:layout_marginRight="16dp"
+             android:onClick="@{()->activity.loginKakao()}"
              android:src="@drawable/icon_kakako" />
 
          <ImageView
@@ -30,6 +44,7 @@
              android:layout_height="40dp"
              android:layout_marginLeft="16dp"
              android:layout_marginRight="16dp"
+             android:onClick="@{()->activity.loginGoogle()}"
              android:src="@drawable/icon_google" />
 
          <ImageView
@@ -38,6 +53,7 @@
              android:layout_height="40dp"
              android:layout_marginLeft="16dp"
              android:layout_marginRight="16dp"
+             android:onClick="@{()->activity.loginNaver()}"
              android:src="@drawable/icon_naver" />
 
       </LinearLayout>

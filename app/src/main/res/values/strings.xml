@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SeoulEvent</string>
+    <string name="social_login_info_naver_client_id">pFH7Zlh74LYgebXFtB4Z</string>
+    <string name="social_login_info_naver_client_secret">cMqwlCq6Pp</string>
+    <string name="social_login_info_naver_client_name">네이버아이디 로그인</string>
 </resources>
